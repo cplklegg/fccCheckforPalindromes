@@ -1,0 +1,5 @@
+function palindrome(str) {
+  var lowStr = str.replace(/[\W_]/g, '').toLowerCase();
+  var reverseStr = lowStr.split('').reverse().join('');
+  return lowStr === reverseStr;  
+}
